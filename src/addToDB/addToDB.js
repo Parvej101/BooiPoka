@@ -1,4 +1,5 @@
-// import { toast } from "react-toastify";
+import { toast } from "react-toastify";
+
 
 const getStoredReadList = () => {
     // read-list
@@ -23,8 +24,8 @@ const addToStoredReadList = (id) => {
         const storedListStr = JSON.stringify(storedList);
         localStorage.setItem('read-list', storedListStr);
         // ideally trigger toast from the component
-        // toast('This book is added to your read list.')
-        alert('This book is added to your read list.')
+        toast('This book is added to your read list.')
+       
     }
 }
 

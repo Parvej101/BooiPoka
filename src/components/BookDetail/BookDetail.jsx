@@ -45,7 +45,7 @@ const BookDetail = () => {
                     <p><span>Rating :</span>{rating}</p>
                     <div className="card-actions ">
                         <button onClick={()=> handleToMarkAsRead(currentBookId)} className="btn">Read</button>
-                        <button onClick={()=> addToStoredWishList(currentBookId)} className="btn bg-sky-300">WishList</button>
+                        <button onClick={()=> handleaddToStoredWishList(currentBookId)} className="btn bg-sky-300">WishList</button>
                     </div>
                 </div>
             </div>
